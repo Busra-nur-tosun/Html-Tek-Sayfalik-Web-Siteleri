@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css">
+
+	<style>
+		* {
+			box-sizing: border-box;
+		}
+
+		header {
+			position: relative;
+			height: 10%;
+			width: 100%;
+		}
+
+		ul {
+			list-style-type: none;
+			background-color: white;
+			color: black;
+			overflow: hidden;
+			margin: 0;
+			bottom: 0;
+		}
+
+		ul li {
+			float: left;
+
+		}
+
+		li a {
+			display: block;
+			list-style-type: none;
+			text-align: center;
+			text-decoration: none;
+			padding-left: 0;
+			padding: 14px 16px;
+			color: black;
+		}
+
+		.1-bolum h1 {
+			font-size: 45px;
+			position: relative;
+
+			margin-left: 45px;
+		}
+
+
+		.sag-taraf {
+			list-style-type: none;
+			background-color: white;
+			color: black;
+			overflow: hidden;
+			margin-left: 0px;
+			margin-right: 110px;
+			margin-top: -73px;
+
+		}
+
+		.sag-taraf li {
+			float: right;
+			margin-left: 5px;
+		}
+
+		.samsung {
+			position: relative;
+			margin-left: 10px;
+			margin-top: -48px;
+			text-align: center;
+			padding: 14px 16px;
+			font-size: 22px;
+			color: rgb(20, 40, 160);
+		}
+
+		.1-bolum {
+			height: 20%;
+			width: 100%;
+		}
+
+		img[alt="resim1"] {
+			position: relative;
+			height: 100%;
+			width: 280px;
+			margin-right: 150px;
+			margin-top: 20px;
+
+
+		}
+
+		/* ill resmin yanındaki paragraf ve buton kısmı için*/
+		h1[class="1-h1"] {
+			font-size: 55px;
+			position: relative;
+			padding-left: 100px;
+			padding-top: 80px;
+		}
+
+		h2[class="1-h2"] {
+			font-size: 30px;
+			position: relative;
+			padding-left: 100px;
+			margin-top: -25px;
+		}
+
+		a[id="#link1"] {
+			font-size: 18px;
+			text-decoration: underline;
+			position: relative;
+			padding-left: 100px;
+			margin-top: -20px;
+			margin-right: 20px;
+		}
+
+		button[class="ılkbuton"] {
+			position: relative;
+			border: 1px solid;
+			font-size: 18px;
+			color: black;
+			padding: 15px;
+			width: 200px;
+			text-align: center;
+			border-radius: 30px;
+			text-decoration: none;
+			overflow: hidden;
+			cursor: pointer;
+			/*üzerine gelince fare imleci değişir*/
+		}
+
+		/* 2.bölümün genel hatları*/
+		div[class="2-bolum"] {
+			width: auto;
+			height: 400px;
+			position: relative;
+			margin-top: 55px;
+			background-color: lightgrey;
+			margin-left: 20px;
+			margin-right: 20px;
+			margin-bottom: 20px;
+		}
+
+		img[align="left"] {
+			position: relative;
+			height: 90%;
+			width: 300px;
+			margin-right: 150px;
+			margin-top: 25px;
+			margin-left: 160px;
+			margin-bottom: 10px;
+		}
+
+		h1[class="2-h1"] {
+			font-size: 53px;
+			position: relative;
+			/*padding-right: 0.3px;*/
+			padding-top: 130px;
+			margin-right: 0.2px;
+		}
+
+		p[class="2-p"] {
+			font-size: 25px;
+		}
+
+		button[class="buton2"] {
+			position: relative;
+			border: 1px solid;
+			font-size: 16px;
+			color: black;
+			background-color: lightgrey;
+			padding: 15px;
+			width: 250px;
+			text-align: center;
+			border-radius: 30px;
+			text-decoration: none;
+			overflow: hidden;
+			cursor: pointer;
+		}
+
+		button[class="button3"] {
+			position: relative;
+			border: 1px solid;
+			font-size: 16px;
+			color: black;
+			background-color: lightgrey;
+			padding: 15px;
+			width: 250px;
+			text-align: center;
+			border-radius: 30px;
+			text-decoration: none;
+			overflow: hidden;
+			cursor: pointer;
+		}
+
+		/*3.kısmın genel hatları*/
+		div[class="3-bolum"] {
+			width: auto;
+			height: 400px;
+			position: relative;
+			margin-top: 55px;
+			background-color: white;
+			margin-left: 20px;
+			margin-right: 20px;
+			margin-bottom: 20px;
+		}
+
+		img[alt="resim3"] {
+			position: relative;
+			height: 90%;
+			width: 500px;
+			margin-right: 60px;
+			margin-top: 25px;
+			margin-left: 160px;
+			margin-bottom: 10px;
+		}
+
+		h1[class="3-h1"] {
+			font-size: 60px;
+			position: relative;
+			padding-left: 120px;
+			padding-top: 80px;
+		}
+
+		p[class="3-p"] {
+			font-size: 22px;
+			margin-left: 55px;
+		}
+
+		button[class="buton4"] {
+			position: relative;
+			border: 1px solid;
+			font-size: 16px;
+			color: black;
+			background-color: white;
+			padding: 15px;
+			width: 250px;
+			text-align: center;
+			border-radius: 30px;
+			text-decoration: none;
+			overflow: hidden;
+			cursor: pointer;
+			margin-left: 55px;
+
+		}
+
+		button[class="buton5"] {
+			position: relative;
+			border: 1px solid;
+			font-size: 16px;
+			color: black;
+			background-color: white;
+			padding: 15px;
+			width: 250px;
+			text-align: center;
+			border-radius: 30px;
+			text-decoration: none;
+			overflow: hidden;
+			margin-left: 55px;
+			cursor: pointer;
+		}
+
+		/*4.bölmün genel hatları*/
+		div[class="4-bolum"] {
+			width: auto;
+			height: 400px;
+			position: relative;
+			margin-top: 55px;
+			background-color: lightgrey;
+			margin-left: 20px;
+			margin-right: 20px;
+			margin-bottom: 20px;
+		}
+
+		img[alt="resim4"] {
+			position: relative;
+			height: 90%;
+			width: 320px;
+			margin-right: 180px;
+			margin-top: 25px;
+			margin-left: 20px;
+			margin-bottom: 10px;
+		}
+
+		h1[class="4-h1"] {
+			font-size: 40px;
+			position: relative;
+			text-align: right;
+			padding-right: 5px;
+			padding-top: 30px;
+		
+			padding-right: 110px;
+			margin-right: 20px;
+			
+		}
+		h1[class="4-h2"]{font-size: 40px;
+			position: relative;
+			text-align: right;
+			padding-right: 5px;
+			padding-top: 40px;
+		
+			padding-right: 110px;
+			margin-right: 20px;}
+
+		p[class="4-p"] 
+		{
+			font-size: 22px;
+			position: relative;
+			text-align: left;
+			padding-top: -60px;
+			padding-right: -90px;
+			margin-left: -65px;;
+		}
+
+
+
+		button[class="buton6"] {
+			position: relative;
+			border: 1px solid;
+			font-size: 16px;
+			color: black;
+			background-color: lightgrey;
+			padding: 15px;
+			width: 250px;
+			text-align: center;
+			border-radius: 30px;
+			text-decoration: none;
+			overflow: hidden;
+			margin-left: 295px;
+			cursor: pointer;
+			padding-top: -35px;
+			margin-bottom: 5px;
+		}
+		/*5.bölüm*/
+		div[class="5-bolum"]{
+			width: auto;
+			height: 400px;
+			position: relative;
+			margin-top: 55px;
+			background-color: white;
+			margin-left: 20px;
+			margin-right: 20px;
+			margin-bottom: 20px;
+		}
+
+		img[alt="resim5"]{
+			position: relative;
+			padding-top: 0;
+		}
+		h1[class="5-h1"]{font-size: 40px;
+			position: relative;
+			padding-left: 80px;
+			padding-top: 60px;
+		}
+		button[class="buton7"] {
+			position: relative;
+			border: 1px solid;
+			font-size: 16px;
+			color: black;
+			background-color:white;
+			padding: 15px;
+			width: 250px;
+			text-align: center;
+			border-radius: 30px;
+			text-decoration: none;
+			overflow: hidden;
+			margin-left: 85px;
+			cursor: pointer;
+			padding-top: -35px;
+			margin-bottom: 5px;
+		}
+		img[alt="sonbolum"]{width: 100%;
+		height: 580px;}
+	</style>
+</head>
+
+<body>
+	<header>
+		<ul>
+			<li><a href="#mobil"><b>MOBİL</b></a></li>
+			<li><a href="#tv"><b>TV & AV</b></a></li>
+			<li><a href="#BEYAZ "><b>EŞYA</b></a></li>
+			<li><a href="#ıt"><b>IT & HAFIZA</b></a></li>
+			<li><a href="#online"><b>ONLİNE ALIŞVERİŞ</b></a></li>
+		</ul>
+		<p class="samsung"><b>SAMSUNG</b></p>
+		<ul class="sag-taraf">
+			<li><a href="#kampanyalar"><b>KAMPANYALAR</b></a></li>
+			<li><a href="#destek"><b>DESTEK </b></a></li>
+			<li><a href="#kurumsal-cozumler"><b>KURUMSAL ÇÖZÜMLER</b></a></li>
+		</ul>
+		<hr>
+	</header>
+
+	<div class="1-bolum">
+		<img src="%C3%B6dev3-resim1.png" alt="resim1" align="right">
+		<h1 class="1-h1">GALAKXY S9+</h1>
+		<br>
+		<h2 class="1-h2">Kamera.Yeniden tasarlandı.</h2>
+		<a id="#link1">DAHA FAZLASINI ÖĞRENİN</a>
+		<button class="ılkbuton">ön sipariş</button>
+	</div>
+	<div class="2-bolum">
+		<img src="%C3%B6dev3-resim2.png" align="left">
+		<h1 class="2-h1">GALAKXY NOTE8</h1>
+		<p class="2-p">Büyük işler yap</p>
+		<button class="buton2">DAHA FAZLASINI ÖĞRENİN</button>
+		<button class="button3">SATIN AL</button>
+	</div>
+	<div class="3-bolum">
+		<img src="%C3%B6dev3-resim3.png" alt="resim3" align="right">
+		<h1 class="3-h1">QLED</h1>
+		<p class="3-p">Tüm renk tonları onunla hayat bulur</p>
+		<button class="buton4">DAHA FAZLASINI ÖĞRENİN</button><br><br>
+		<button class="buton5">KAMPANYA FIRSATLARI</button>
+	</div>
+	<div class="4-bolum">
+		<img src="%C3%B6dev3-resim4.png" alt="resim4" align="left">
+		<h1 class="4-h1">AddWash Akıllı Kapak</h1> <h1 class="4-h2">Teknolojisi</h1>
+		<p class="4-p" text-align="left" font-size="28px">Yıkama sırasında kolayca ekleyin</p>
+		<button class="buton6">DAHA FAZLASINI KEŞFET</button>
+	</div>
+	<div class="5-bolum">
+	<img src="%C3%B6dev3-resim5.png" alt="resim5" align="right">
+		<h1 class="5-h1"> HAYATA<br/> ZAHMETSİZCE<br/> BAĞLAN</h1>
+		<button class="buton7">DAHA FAZLASINI KEŞFET</button>
+	</div>
+	<div class="son-bolum">
+	<img src="%C3%B6dev3-resim6.png" alt="sonbolum">
+		
+	</div>
+</body>
+
+</html>
